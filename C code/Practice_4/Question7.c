@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int n, i;
+    int sum = 0;
+    printf("Enter a number\n");
+    scanf("%d", &n);
+
+    printf("The multiplication table of %d is\n", n);
+    for (i = 1; i <= 10; i++)
+    {
+        printf("%d * %d = %d\n", n , i, i * n);
+        sum += i * n;
+    }
+
+    printf("The sum of numbers occuring in the multiplication table of %d is %d", n, sum);
+    return 0;
+}

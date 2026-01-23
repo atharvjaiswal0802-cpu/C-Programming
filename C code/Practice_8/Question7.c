@@ -1,0 +1,17 @@
+#include <stdio.h>
+void decrypt(char *c){
+    char *ptr = c;
+    while (*ptr != '\0')
+    {
+        *ptr = *ptr - 1;
+        ptr++;
+    }
+}
+
+int main() {
+    char c[] = "Buibsw";
+    decrypt(c);
+    printf("Decrypted string becomes: %s", c);
+    return 0;
+}
+//Buibsw - Atharv
